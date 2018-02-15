@@ -20,11 +20,14 @@ def secret_message str
         if char_num == 25
             char_num = -1
         end
-        newStr += letters[char_num + 1]
-        p char_num
+        if char_num == nil 
+            newStr += ' '
+        else
+            newStr += letters[char_num + 1]
+        end
         i += 1
     end
     p newStr
 end
 
-secret_message("zat")
+secret_message("this is a secret message")
