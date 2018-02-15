@@ -21,7 +21,7 @@ def secret_message str
             char_num = -1
         end
         if char_num == nil 
-            newStr += ' '
+            newStr += chars[i]
         else
             newStr += letters[char_num + 1]
         end
@@ -30,4 +30,4 @@ def secret_message str
     p newStr
 end
 
-secret_message("this is a secret message")
+secret_message("*Super-beefcake@ totes_Awesome!!")
